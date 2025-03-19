@@ -41,11 +41,11 @@ Chama-Management/
 ### Initialize the Database
 Run the following command to set up the database:
 ```sh
-python main.py
+python operations.py
 ```
 
 ### Available Commands
-When you run `main.py`, you will be presented with a menu:
+When you run `operations.py`, you will be presented with a menu:
 1. Add Member
 2. Add Contribution
 3. Request Loan
