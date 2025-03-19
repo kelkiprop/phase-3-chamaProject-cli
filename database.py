@@ -3,7 +3,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 
 #setting up db connection
-DATABASE_URL = "sqlite:///chama.db"  # Change for PostgreSQL/MySQL if needed
+DATABASE_URL = "sqlite:///chama.db" 
 
 # Set up SQLAlchemy engine
 engine = create_engine(DATABASE_URL, echo=True)

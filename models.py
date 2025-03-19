@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, Date, ForeignKey, Boolean
+from sqlalchemy import Column, Integer, String, Float, Date, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
 
 Base = declarative_base()
@@ -22,7 +22,8 @@ class Contribution(Base):
     date = Column(Date, nullable=False)
     member_id = Column(Integer, ForeignKey('members.id', ondelete="CASCADE"))
 
-    # Relationship
+    # Relationship.schema tablename
+
     member = relationship("Member", back_populates="contributions")
 
 class Loan(Base):
